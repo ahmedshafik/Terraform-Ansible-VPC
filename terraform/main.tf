@@ -294,6 +294,7 @@ resource "aws_instance" "AppServer" {
   ami      = "${data.aws_ami.ubuntuimg.id}"
   key_name = "${var.AWS_instance_KEY}"
   instance_type = "t2.micro"
+  associate_public_ip_address = true
   subnet_id = "${aws_subnet.Private_Subnet.id}"
   depends_on = ["aws_nat_gateway.Nat-GW"]
   vpc_security_group_ids = ["${aws_security_group.SGPSQL.id}","${aws_security_group.SGSSH.id}","${aws_security_group.SGHTTPS.id}","${aws_security_group.SGICMP.id}"]
