@@ -1,7 +1,7 @@
 # Terraform-Ansible-VPC
 Creating a simple VPC design 
 # Digram
-https://user-images.githubusercontent.com/7353494/42738026-158792e0-887d-11e8-8eed-c416c16b5b1b.jpg)
+![running terraform apply 1](https://user-images.githubusercontent.com/7353494/42738026-158792e0-887d-11e8-8eed-c416c16b5b1b.jpg)
 
 # Pre-installed package: 
 
