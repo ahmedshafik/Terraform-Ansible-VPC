@@ -1,0 +1,15 @@
+---
+- name: Add ansible repository.
+  apt_repository: repo='ppa:ansible/ansible'
+
+
+- name: Install Ansible.
+  apt:
+    name: ansible
+    update_cache: yes
+    state: present
+
+- name: Copying Role-Book
+  copy:
+      dest: /etc/ansible/roles/
+      src: /etc/ansible/roles/

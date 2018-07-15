@@ -1,0 +1,14 @@
+---
+- hosts: all
+  gather_facts: False
+  become: yes
+  tasks:
+    - name: ensure python 2.7 is installed
+      raw: apt-get install -y python2.7 python-simplejson
+
+- name: "installing roles" 
+  hosts: all      
+  become: yes
+  roles:
+    - ansible-runbook
+    - docker-runbook
