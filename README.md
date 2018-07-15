@@ -32,3 +32,10 @@ The access and private keys can be passed to terrafrom in two ways
     * terraform apply
 
 screenshots are avilable in the screenshots folder
+
+# To-Do
+
+- [ ] Update the run books to handle various Linux flavors “Centos
+- [ ] Enhance terraform script and use modules
+- [ ] Use AWS ACLs.
+- [ ] Better Keys handling 
